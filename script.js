@@ -4,8 +4,8 @@
    ========================================================= */
 
 const CONFIG = {
-    whatsapp: "5491133853115", // Número de WhatsApp (formato: 54 9 + código de área + número)
-    instagram: "https://www.instagram.com/decant_style.parfum/"
+    whatsapp: "", // Número de WhatsApp (formato: 54 9 + código de área + número)
+    instagram: "https://www.instagram.com"
 };
 
 
