@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de perfumes originales de Decant'Style Parfum.">
+    <title>Catálogo | Decant'Style Parfum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BOTONES FLOTANTES -->
+<div class="floating-buttons">
+
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/5491133853115?text=Hola%20Decant%27Style%20Parfum%2C%20quer%C3%ADa%20consultar%20por%20el%20cat%C3%A1logo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="floating-btn whatsapp-btn"
+        aria-label="Contactar por WhatsApp"
+        title="WhatsApp"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Z"/>
+            <path
+                d="M8.7 7.4c.2-.3.5-.4.8-.2l1.1.7c.3.2.4.5.2.8l-.5.9c-.1.2-.1.4.1.6.5.7 1.2 1.3 2 1.7.2.1.4.1.6-.1l.7-.6c.2-.2.5-.2.8-.1l1.1.7c.3.2.4.5.2.8-.3.6-.8 1-1.4 1.2-.7.2-1.5-.1-2.3-.5-1.4-.7-2.7-1.8-3.7-3-.8-1-1.4-2-1.5-2.8-.1-.5.1-1 .4-1.4Z"
+            />
+        </svg>
+    </a>
+
+
+    <!-- INSTAGRAM -->
+    <a
+        href="https://www.instagram.com/decant_style.parfum/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="floating-btn instagram-btn"
+        aria-label="Instagram"
+        title="Instagram"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect
+                x="3"
+                y="3"
+                width="18"
+                height="18"
+                rx="5"
+            />
+
+            <circle
+                cx="12"
+                cy="12"
+                r="4.2"
+            />
+
+            <circle
+                cx="17.4"
+                cy="6.7"
+                r="1.1"
+                class="instagram-dot"
+            />
+        </svg>
+    </a>
+
+</div>
+
+    <!-- HEADER DEL CATÁLOGO -->
+    <header class="catalog-header">
+        <div class="catalog-header-inner">
+            <a href="index.html" class="catalog-brand" aria-label="Volver al inicio">
+                <!--
+                    LOGO: mismo componente que en index.html.
+                    Para usar la imagen real del logo en vez del
+                    círculo con la "D":
+                    1) Guardá el archivo, por ejemplo, en "images/logo.png"
+                    2) Borrá el <span class="brand-mark">D</span> de abajo
+                    3) Pegá en su lugar:
+                         <img src="images/logo.png" alt="Decant'Style Parfum" class="logo-img">
+                -->
+                <span class="brand-mark">D</span>
+                <span>Decant'Style</span>
+            </a>
+
+            <div class="catalog-heading">
+                <span class="eyebrow">DECANT'STYLE PARFUM</span>
+                <h1>Catálogo</h1>
+            </div>
+
+            <a href="index.html" class="btn-back">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 11.5 12 4l9 7.5"></path>
+                    <path d="M5.5 10.5V20h13v-9.5"></path>
+                    <path d="M9.5 20v-5.5h5V20"></path>
+                </svg>
+                <span>Volver al inicio</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="catalog-page">
+        <section class="catalog-intro">
+            <div class="catalog-intro-content">
+                <span class="section-kicker">FRAGANCIAS ORIGINALES</span>
+                <h2>Encontrá tu próxima fragancia</h2>
+                <p>Explorá el catálogo, filtrá por presentación y precio y consultanos directamente por WhatsApp.</p>
+            </div>
+        </section>
+
+        <section class="catalog-container" aria-label="Catálogo de perfumes">
+            <div class="catalog-toolbar">
+                <div class="search-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="6.5"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                    <input id="product-search" type="search" placeholder="Buscar perfume..." autocomplete="off" aria-label="Buscar perfume">
+                    <button id="clear-search" class="clear-search" type="button" aria-label="Limpiar búsqueda">×</button>
+                </div>
+
+                <button id="mobile-filters-toggle" class="mobile-filter-toggle" type="button" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 6h16M7 12h10M10 18h4"></path>
+                    </svg>
+                    Filtros
+                    <span id="filter-badge">0</span>
+                </button>
+
+                <div class="results-sort">
+                    <span id="results-count">15 perfumes</span>
+                    <label for="sort-products" class="sr-only">Ordenar productos</label>
+                    <select id="sort-products">
+                        <option value="featured">Destacados</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name">Nombre: A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="active-filters" class="active-filters" aria-live="polite"></div>
+
+            <div class="catalog-layout">
+                <aside id="filter-panel" class="filter-panel" aria-label="Filtros del catálogo">
+                    <div class="filter-panel-header">
+                        <div>
+                            <span class="filter-kicker">PERSONALIZÁ TU BÚSQUEDA</span>
+                            <h3>Filtrar</h3>
+                        </div>
+                        <button id="close-filters" class="close-filters" type="button" aria-label="Cerrar filtros">×</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Categoría</h4>
+                        <div class="filter-options category-options">
+                            <button class="filter-chip active" data-category="all" type="button">Todos <span>15</span></button>
+                            <button class="filter-chip" data-category="arabes" type="button">Perfumes árabes <span>15</span></button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Presentación</h4>
+                        <div class="check-option">
+                            <input id="size-3" type="checkbox" value="3">
+                            <label for="size-3">3 ml</label>
+                        </div>
+                        <div class="check-option">
+                            <input id="size-5" type="checkbox" value="5">
+                            <label for="size-5">5 ml</label>
+                        </div>
+                        <div class="check-option">
+                            <input id="size-10" type="checkbox" value="10">
+                            <label for="size-10">10 ml</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Precio máximo</h4>
+                        <div class="range-value">Hasta <strong id="price-value">$18.000</strong></div>
+                        <input id="price-range" type="range" min="7500" max="18000" step="500" value="18000">
+                        <div class="range-labels"><span>$7.500</span><span>$18.000</span></div>
+                    </div>
+
+                    <div class="filter-group">
+                        <div class="check-option favorite-filter">
+                            <input id="favorites-only" type="checkbox">
+                            <label for="favorites-only">Solo mis favoritos</label>
+                        </div>
+                    </div>
+
+                    <button id="clear-filters" class="clear-filters" type="button">Limpiar filtros</button>
+                </aside>
+
+                <div class="products-area">
+                    <!--
+                        PRODUCTOS: esta grilla se completa sola con
+                        script.js (función renderProducts) a partir del
+                        array "perfumes". Para agregar la foto de cada
+                        perfume (hoy se muestra un ícono "DS" como
+                        placeholder), mirá el comentario que está justo
+                        arriba de "const perfumes = [...]" en script.js.
+                    -->
+                    <div id="catalog-products" class="products-grid" aria-live="polite"></div>
+
+                    <div id="empty-state" class="empty-state hidden">
+                        <div class="empty-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="11" cy="11" r="6.5"></circle>
+                                <path d="m16 16 5 5"></path>
+                            </svg>
+                        </div>
+                        <h3>No encontramos perfumes</h3>
+                        <p>Probá con otro nombre o quitá alguno de los filtros.</p>
+                        <button id="empty-clear" type="button" class="btn-primary">Ver todo el catálogo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="index.html">Decant'Style</a>
+        <span>•</span>
+        <a href="index.html#nosotros">Quiénes somos</a>
+        <span>•</span>
+        <a href="https://www.instagram.com/decant_style.parfum/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

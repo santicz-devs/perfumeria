@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decant'Style Parfum: fragancias árabes 100% originales en decants de 3ml, 5ml y 10ml. San Justo, Buenos Aires. El mismo impacto, por mucho menos.">
+    <title>Decant'Style Parfum - Fragancias Originales Premium</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================================
+         BOTONES FLOTANTES (WhatsApp / Instagram)
+         Mismo componente que en catalog.html
+         ============================================ -->
+    <div class="floating-buttons">
+        <a
+            href="https://wa.me/5491133853115?text=Hola%20Decant%27Style%20Parfum%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20tus%20perfumes"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="floating-btn whatsapp-btn"
+            aria-label="Contactar por WhatsApp"
+            title="WhatsApp"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Z"/>
+                <path d="M8.7 7.4c.2-.3.5-.4.8-.2l1.1.7c.3.2.4.5.2.8l-.5.9c-.1.2-.1.4.1.6.5.7 1.2 1.3 2 1.7.2.1.4.1.6-.1l.7-.6c.2-.2.5-.2.8-.1l1.1.7c.3.2.4.5.2.8-.3.6-.8 1-1.4 1.2-.7.2-1.5-.1-2.3-.5-1.4-.7-2.7-1.8-3.7-3-.8-1-1.4-2-1.5-2.8-.1-.5.1-1 .4-1.4Z"/>
+            </svg>
+        </a>
+
+        <a
+            href="https://www.instagram.com/decant_style.parfum/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="floating-btn instagram-btn"
+            aria-label="Instagram"
+            title="Instagram"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4.2"/>
+                <circle cx="17.4" cy="6.7" r="1.1" class="instagram-dot"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- ============================================
+         HEADER / NAVEGACIÓN
+         ============================================ -->
+    <header>
+        <a href="index.html" class="logo" aria-label="Decant'Style Parfum - Inicio">
+            <!--
+                LOGO: acá vas a ver un círculo con la letra "D" como
+                logo de texto (mismo estilo que usa catalog.html).
+                Si querés usar la imagen real del logo de Instagram:
+                1) Guardá el archivo, por ejemplo, en "images/logo.png"
+                2) Borrá el <span class="brand-mark">D</span> de abajo
+                3) Pegá en su lugar:
+                     <img src="images/logo.png" alt="Decant'Style Parfum" class="logo-img">
+            -->
+            <span class="brand-mark">D</span>
+            <span>Decant'Style</span>
+        </a>
+
+        <nav class="nav-buttons">
+            <a href="#nosotros" class="nav-link">Quiénes somos</a>
+            <a href="#destacados" class="nav-link">Destacados</a>
+            <a href="catalog.html" class="btn-header">Ver Catálogo</a>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="section-kicker centered">FRAGANCIAS ÁRABES 100% ORIGINALES</span>
+            <h1>La solución al alcance <span class="highlight">de tus manos</span></h1>
+            <p>El mismo impacto, pero por mucho menos. Elegí tu fragancia favorita y llevátela en decants de 3ml, 5ml o 10ml.</p>
+            <a href="catalog.html" class="btn-primary">
+                EXPLORAR PERFUMES
+                <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h13"/>
+                    <path d="m13 6 6 6-6 6"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROPUESTA DE VALOR
+         ============================================ -->
+    <section class="section-dark">
+        <span class="section-kicker centered">¿POR QUÉ ELEGIRNOS?</span>
+        <h2>¿Por qué elegir Decant'Style?</h2>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">✨</div>
+                <h3>Fragancias Originales</h3>
+                <p>100% garantizadas, cada botella es auténtica.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h3>Variedad Exclusiva</h3>
+                <p>Decants de perfumes árabes premium en 3ml, 5ml y 10ml.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>Precios Competitivos</h3>
+                <p>Máxima calidad sin gastar una fortuna.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">👑</div>
+                <h3>Detalles Premium</h3>
+                <p>Presentación y acabado impecable en cada envío.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         QUIÉNES SOMOS
+         ============================================ -->
+    <section class="about-section" id="nosotros">
+        <div class="about-grid">
+
+            <div class="about-text">
+                <span class="section-kicker">NUESTRA HISTORIA</span>
+                <h2>Quiénes somos</h2>
+                <p>
+                    Somos Decant'Style Parfum, un emprendimiento de San Justo, Buenos Aires,
+                    dedicado a acercarte fragancias árabes 100% originales sin que tengas
+                    que gastar una fortuna.
+                </p>
+                <p>
+                    Sabemos que un perfume de diseñador puede ser difícil de pagar, por eso
+                    trabajamos con decants: la misma fragancia original, en formatos de
+                    3ml, 5ml y 10ml, para que puedas elegir, probar y renovar tu colección
+                    las veces que quieras.
+                </p>
+
+                <ul class="about-badges">
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+                        Perfumes 100% originales, garantizados
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+                        Atención personalizada por WhatsApp
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+                        Retiro en San Justo y envíos a todo el país
+                    </li>
+                </ul>
+
+                <a href="catalog.html" class="btn-primary">CONOCER EL CATÁLOGO</a>
+            </div>
+
+            <div class="about-image-frame">
+                <!--
+                    FOTO DE "QUIÉNES SOMOS": este marco tiene un
+                    placeholder con el logo. Para poner una foto real
+                    del local, del equipo o de los perfumes:
+                    1) Guardá la imagen, por ejemplo, en "images/local.jpg"
+                    2) Borrá el <div class="about-image-placeholder">...</div> de abajo
+                    3) Pegá en su lugar:
+                         <img src="images/local.jpg" alt="Local Decant'Style Parfum en San Justo">
+                -->
+                <div class="about-image-placeholder">
+                    <span class="mark">DS</span>
+                    <span>Foto del local, del equipo o de los perfumes acá</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about-stats">
+            <div class="about-stat">
+                <strong>100%</strong>
+                <span>Perfumes originales</span>
+            </div>
+            <div class="about-stat">
+                <strong>3 / 5 / 10 ml</strong>
+                <span>Presentaciones disponibles</span>
+            </div>
+            <div class="about-stat">
+                <strong>San Justo</strong>
+                <span>Buenos Aires, Argentina</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         DESTACADOS
+         Se completa automáticamente con script.js
+         (función renderFeaturedProducts) a partir del
+         array "perfumes". Para agregar la imagen de
+         cada perfume, mirá el comentario en script.js
+         justo arriba de "const perfumes = [...]".
+         ============================================ -->
+    <section id="destacados">
+        <span class="section-kicker centered">LO MÁS ELEGIDO</span>
+        <h2>Nuestros Destacados</h2>
+
+        <div class="products-grid" id="featured-products">
+            <!-- Se llena con JavaScript -->
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA FINAL
+         ============================================ -->
+    <section class="cta-section">
+        <h2>¿Listo para destacar?</h2>
+        <p>Descubrí todas nuestras fragancias en el catálogo completo, filtrá por presentación y precio, y consultanos directo por WhatsApp.</p>
+        <a href="catalog.html" class="btn-primary">VER CATÁLOGO COMPLETO</a>
+    </section>
+
+    <footer class="site-footer">
+        <a href="index.html">Decant'Style</a>
+        <span>•</span>
+        <a href="catalog.html">Catálogo</a>
+        <span>•</span>
+        <a href="https://www.instagram.com/decant_style.parfum/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
